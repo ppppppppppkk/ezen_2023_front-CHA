@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2> 과제2</h2>
+    <form>
+    <fieldset>
+        <legend> <h3> 비회원 게시판</h3></legend>
+    <p>카테고리   <select> <option> 공지사항</option></select> </p>
+    <br/>
+
+    <input type="text" placeholder="작성자" /> 
+    <input type="text" placeholder="비밀번호" /> <hr/> <!-- 가로 선 태그-->
+    <input type="text" placeholder="게시물 제목 입력" /> <hr/>
+
+    <textarea rows="15" cols="56">게시물 내용 입력</textarea> 
+    <br/>
+    공개선택 <input type="radio" name="openConfirm" checked> 공개글
+            <input type="radio" name="openConfirm">비공개글
+            <br/>
+
+    공유선택 <input type="checkbox"  name="shareConfirm"/> 카카오톡
+            <input type="checkbox"   name="shareConfirm" /> 트위터 
+            <input type="checkbox"   name="shareConfirm" /> 네이버 카페
+            <br/>
+
+    작성일자 <input type="data"/> 작성시간 <input type="time"/>
+            
+            <br/>
+    첨부파일 <input type="file">
+    <br/> <br/>
+    <input type="button" value="목록보기"/>
+    <input type="submit" value="글쓰기"/>
+     <input type="reset" value="다시쓰기"/> 
+
+    </fieldset>
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>
