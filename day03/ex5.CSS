@@ -1,0 +1,64 @@
+.title{
+    width: 70px ;
+}
+li{ 
+    background-color:rgb(0, 153, 255)
+    
+  
+}
+
+
+
+.a{
+    margin: 810px;
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    
+}
+.q{
+    margin: 10px;
+    width: 180px;
+}
+
+body{
+    text-align: center;
+    border-style: dotted;
+}
+
+
+
+
+.content{
+    border-style: solid;
+    border-width: 3px;
+
+
+}
+
+
+.contents{
+    border-style: double;
+    border-width: 3px;
+}
+
+
+
+
+.w{
+    
+    text-align: center;
+    padding: 50px;
+    
+    
+}
+
+
+.q{
+    padding:4px;
+    color: rgb(0, 174, 255);
+    border: 3px ;
+
+}
