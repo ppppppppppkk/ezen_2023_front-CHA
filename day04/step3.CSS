@@ -1,0 +1,60 @@
+*{
+    border: 2px solid pink;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+
+#webrap{
+    width: 900px; /* 가로 사이즈 */
+    margin: 50px auto;
+}
+header{
+    background-color: blue;
+}
+nav{
+    background-color: brown;
+    }
+main{
+    background-color: orange;
+    display: flex;
+    flex-wrap: nowrap;
+}
+article{
+    width: 600px;   /* 부모가 900px 에서 600px 사용 */
+}
+aside{
+    width: 300px;   /* 부모 900px에서 300px 사용 */
+}
+footer{
+    background-color: black; color: white;
+}
+
+
+
+
+
+#header{
+    background-color: blue; color: white;
+}
+
+
+#nav{
+    background-color: brown; color: white;
+}
+
+#main{
+    background-color: orange;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#article{
+    width: 600px;
+}
+#aside{
+    width: 300px;
+}
+
+#footer{
+    background-color: black; color:  white;
+}
