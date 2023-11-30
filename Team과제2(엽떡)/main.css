@@ -1,0 +1,49 @@
+body{
+width: 1280px;
+text-align: center;
+margin: 0 auto;
+
+}
+#menu{
+    margin-left: -700px;
+}
+
+#menu_1{
+    color:  #8C6239 ;
+    font-size: 30px;
+    font-style: bold;
+    margin-bottom: 25px;
+    margin-left: -270px;
+    margin-top: 50px;
+}
+
+span{
+    color: red;
+}
+ul{
+    display: flex;
+    
+}
+#mainMenu{
+    background-color: #F7F0E4;
+    padding: 40px;
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    font-size: 20px;
+    color: #8C6239;
+    
+}
+#menu_2{
+    margin-left: -1099px;
+
+}
+#menuline{
+ 
+}
+#line{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
