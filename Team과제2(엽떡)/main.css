@@ -92,3 +92,11 @@ table{
     padding: 0px;
     height: 100px;
 }
+#sidebar > li{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+#sidebar > li:hover{
+    display: block;
+}
