@@ -1,0 +1,156 @@
+*{
+  padding: 0px; margin: 0px;
+  font-family: 굴림;
+ 
+  box-sizing: border-box; /* 안쪽 여백, 테두리를 포함한 사이즈 모델*/
+  font-size: 12px;
+}
+a{
+    color: black; text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+ .{ width: 100%;}
+
+
+ #topMenu{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 10px; margin-right: 10px;
+    
+}
+#topMenu > li > span {padding: 0px 5px; }
+ #mainMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: 10px;
+    position: sticky; top: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* sticky 주의할점[전체 조건]
+        1. 상위 요소의 높이 사이즈 안에서 고정
+        2. 위치속성 1개이상 필수! : top.right,left,bottom
+        3. 상위 요소가 overflow 속성 사용 금지. */
+}
+
+ #mainMenu > ul {display: flex; font-weight: bold; width: 60%; justify-content: space-between; align-items: center;font-size: 10px;}
+ #mainMenu > form{ border-bottom: 1px solid black;}
+ #mainMenu > form >input{ border: none; padding: 8px; background-color: transparent;} /* transparent 투명색*/
+ #mainMenu > form > img {height: 20px;}
+*:focus{ outline: none;}
+#mainwrap{
+    width: 1620px;
+    margin: 0 auto;
+}
+#footer #inner{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* 드랍메뉴 */
+.subMenu{
+    position: absolute;
+    top: 15px; left: -30px;
+    background-color: white;
+    padding-top: 25px  ; width: 100px;
+    display: none;
+}
+
+ #mainMenu > ul > li {
+    position:  relative ;
+}
+ #mainMenu > ul > li:hover .subMenu {display: block;}
+.subMenu li{
+    text-align: center; margin-bottom: 10px;
+}
+.colorRed{color: red;}
+#mainimg{
+    width: 100%;
+}
+#mainwrap { width: 1620px; margin: 100px auto;}
+#mainwrap .title{
+    font-size: 19px; font-weight: bold;
+    text-align: center;
+}
+#mainwrap .comment{
+    text-align: center; color: #858585;
+    margin-top: 20px;
+}
+#mainwrap .items{
+    margin-top: 50px; display: flex; flex-wrap: wrap; justify-content: space-between;
+}
+.item{
+    width: 370px; margin-bottom: 50px; 
+}
+.item > img{ width: 100%;}
+.colorReview > .color > span {
+    width: 10px; height: 10px; display: inline-block; 
+    border: 1px solid #e8e8e8;
+}
+.colorReview{ display: flex; justify-content: space-between;
+}
+.colorReview > .review{
+    color: aqua;
+}
+.nameSize{
+    margin: 10px 0px 20px 0px;
+}
+.price > .discount{
+    position: absolute;
+    right: 8px; top: 0px;
+    color: red; font-size: 15px; font-weight: bold;
+    margin-bottom: 10px;
+}
+.price{
+    position: relative;    
+}
+
+#footer{
+    background-color: #F7F7F7;
+    
+}
+#add{
+    text-align: center; margin: 20px 0px 50px 0px; color: black;
+}
+#footer #inner{
+    width: 1400px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+}
+#footer #inner > div{
+  
+}
+#inner{
+  padding: 50px;  
+}
+   
+#footer #inner h3{
+    font-size: 16px; margin: 10px 0px;
+}
+#popup{  /* 팝업구역 */
+    position: fixed ;
+    right: 0px; top:40%;
+}
+#popup >li{
+    width: 25px; height: 25px;
+    background-color:   #FAFAFA ;
+    border: 1px solid #dbdbdb;
+    padding: 3px;
+    position: relative;
+}
+#popup >li >img{height: 20px;}
+
+#popup >li >span{
+    position: absolute;
+    top: 5px; right: 25px;
+    font-size: 10px; width: 70px; height: 15px; color: white;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    display: none;   /* 숨기기 */ 
+}
+#popup > li:hover .popupsub{
+    display: block;
+}
