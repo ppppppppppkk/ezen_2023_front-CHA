@@ -69,3 +69,6 @@ function 회원삭제(){ // f start
 
 // 선언키워드 
 // 변수 : let , 상수 : const , 함수 : function
+
+
+
