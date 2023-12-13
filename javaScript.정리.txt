@@ -213,6 +213,18 @@ JAVA 와 JAVAScript 다르다.
         변수/상수명 + 10
 
 
+
+ 변수선언 : let 변수명 = 10;
+    상수선언 : consot 상수명 = 10;
+    배열선언 : let/const 변수/상수명 = [ ]
+    함수선언 : function 함수명 (){ }
+
+    변수호출 : 변수명
+    상수호출 : 상수명
+    배열호출 : 변수/상수명 또는 변수/상수명[인덱스]
+    함수호출 : 함수명( )
+
+
     - 지역변수 특징
         {  } 안에서 선언된 변수/상수는 { } 밖으로 나올수 없다. 
         {  } 안에서 선언된 변수/상수는 하위 { } 안으로 들어갈수 있다.
@@ -244,6 +256,20 @@ JAVA 와 JAVAScript 다르다.
  
     2. switch
         - default , break
+
+- 제어문(반복문)
+    1. for문
+        for( 초기값 ; 조건문 ; 증감식 ){
+            실행코드
+        }
+    2. 실행순서
+        1.초기값
+        2.조건문
+        [참이면 ] 3.실행코드 4.증감식 2.조건문
+        [거짓이면] 종료                [참이면]3.실행코드 4.증감식 2.조건문
+                                      [거짓이면]종료
+
+
 
 - 키워드
     break : switch , 반목문(for,while) { }탈출
@@ -297,3 +323,33 @@ JAVA 와 JAVAScript 다르다.
         1. { } 안에서 선언된 변수/상수는 해당 { } 밖에서 사용이 불가능하다.
         2. { } 안에서 선언된 변수/상수는 해당 { } 안에서 중첩으로 { } 안에는 들어갈수 있다.
     
+
+- DOM(문서Document 객체Object 모델Model) 객체
+    1. document     :HTML       -(-js는 항상 HTML안에 존재한다)
+        -제공하는 함수
+        1. document.querySeletor('선택자')
+            - 선택자
+            1. '#id명' , '.class명' , ' 마크업' 등
+
+            - 속성
+               1. .value;             입력 태그: input, slect, textarea 등
+               2. .innerHTML;         입력 태그 외 : div, table, ul, h, span 등
+
+            - 함수
+                1. 남이 만든 함수 : alert() , confirm(), push(), splice()
+                2. 내가 만든 함수 : 회원등록(), 로그인()
+            함 : 상자 , 수 : 숫자
+            상자 안에 들어있는 수 => 상자 안에 들어있는 코드 => { }안에 들어있는 코드
+            왜 ? 재활용..
+                1. 매개변수/인자/인수
+                2. 리턴/결과/반환
+
+- 1. HTML 전체를 호출한다.
+    const htmlObj = document;
+- 2. HTML 중에서 input 1개 호출
+    const inputObh = documet.querySeletor('input');
+- 3. HTML 중에서 input의 입력된 value 호출
+    const inputValue = document.querySeletor('input').value;
+
+
+
