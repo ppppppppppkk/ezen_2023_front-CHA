@@ -69,22 +69,24 @@ function printProduct( selectCno ) {  //함수 선언 // 전체출력x //내가 
     console.log( selectCno );
 
     // 1. 어디에
-    const productBox = document.querySelector('#productBox');
+    const productBox = document.querySelector('#productBox'); //경로설정
     // 2. 무엇을
     let html ='';
         // 자식요소에서 내가 선택한 카테고리번호 와 일치한 제품을 찾아서div화
-        for( let i = 0 ; i<productArray.length ; i++){
+        for( let i = 0 ; i<productArray.length ; i++){ //중첩문 let i는 0부터 위에 선언한 productArray부터 마지막5까지 증감연산자를 쓴다
             //만약에 i번째 제품의 cno와 내가선택한 cno와 같으면
             // 천단위쉼표 함수 : 데이터.toLocaleString()
-            if(productArray[i].cno == selectCno){
-                html +=` <div onclick="setCart(${productArray[i].pno})" class="product">
+            if(productArray[i].cno == selectCno){ //만약 productArray i번쨰 cno 는 내가 선택한 카테코리의 제품 같으면 
+                html +=` <div onclick="setCart(${productArray[i].pno})" class="product"> 
                 <img src="img/${productArray[i].pimg}" />
                 <div class="pinfo">
                     <div class="pname"> ${productArray[i].pname}</div>
                     <div class="pprice"> ${productArray[i].pprice.toLocaleString() }원</div>
                 </div>
              </div>`
+                // 
             }
+
         }
     // 3. 출력
     productBox.innerHTML = html;
@@ -147,6 +149,23 @@ function printCart(){
 
 
 
+//======================================================================================
+
+let codeNumber = [
+    { }
+]
+
+let bottomcategory = [
+    { jno: 1, jname : '주문번호'},
+    { jno: 2, jname : '주문날짜'},
+    { jno: 3, jname : '주문상태'},
+    { jno: 4, jname : '제품명'},
+
+]
+
+let bottommenu = [
+    { }
+]
 
 
 
