@@ -46,3 +46,8 @@ const hour = time.split(":")
 console.log( hour );
 const timeOject = { hour : hour[0], min : hour[1] };
 console.log( timeOject );
+
+
+// JSON ; 다른 애플리케이션과 통신할때 교환 목적 활용
+        //1. JS 객체 --> JSON 문자열 : JSON,stringify()
+        //2. JSON문자열 --> JS객체 : JSON.parse()
