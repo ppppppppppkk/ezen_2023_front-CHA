@@ -23,7 +23,7 @@
 
 //=================================================================================
 //배열 안에 객체 선언
-let categoryArray = [
+let categoryArray = [ 
         { cno : 1 , cname : '신제품(new)'},
         { cno : 2 , cname : '프리미엄'},
         { cno : 3 , cname : '와퍼&주니어'},
@@ -74,9 +74,9 @@ function printProduct( selectCno ) {  //함수 선언 // 전체출력x //내가 
     let html ='';
         // 자식요소에서 내가 선택한 카테고리번호 와 일치한 제품을 찾아서div화
         for( let i = 0 ; i<productArray.length ; i++){ //중첩문 let i는 0부터 위에 선언한 productArray부터 마지막5까지 증감연산자를 쓴다
-            //만약에 i번째 제품의 cno와 내가선택한 cno와 같으면
-            // 천단위쉼표 함수 : 데이터.toLocaleString()
-            if(productArray[i].cno == selectCno){ //만약 productArray i번쨰 cno 는 내가 선택한 카테코리의 제품 같으면 
+          
+            if(productArray[i].cno == selectCno){ // 만약에 제품목록의 i번째 
+
                 html +=` <div onclick="setCart(${productArray[i].pno})" class="product"> 
                 <img src="img/${productArray[i].pimg}" />
                 <div class="pinfo">
