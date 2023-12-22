@@ -200,7 +200,7 @@ function 문제9(){
             }
         
         const tableObj = document.querySelector('');
-        tableObj.innerHTML = ;
+        tableObj.innerHTML = '';
        
          }
         
