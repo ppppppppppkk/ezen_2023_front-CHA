@@ -9,7 +9,10 @@
    
 </head>
 <body>
-    
+    <div>
+        <img src="img/도미노피자_로고_(1).png">
+    </div>
+
     <div id="paymentWrap">
         <div>
             메뉴 장바구니 들어오는 부분
@@ -25,14 +28,26 @@
         <div id="print">
            
         </div>
+        <div id="mainrayout">
         <div id="totalPrice">
             <div class="tpContent">총 주문금액</div> : <span></span>
         </div>
 
+        <div id="complain"> 
+            <span id="comp">가게 요청사항</span>
+            <input type="text" /> <input type="button" value="등록"/>
+        </div>
+
+       <div>
+        일회용 수저/포크 빼주세요.
+        <input type="radio" value="O"/>
+       </div>
+
         <div>
             <input id="successPay" onclick="successPayment()" type="button" value="결제 완료"/>
         </div>
-
+    </div>
+           
 
     </div>
     <script src='main.js'></script>
